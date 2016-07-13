@@ -9,3 +9,6 @@ RUN \
   && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
+
+RUN \
+  sed -i 's/DBHOST=localhost/DBHOST=mysql/' /etc/default/automysqlbackup
