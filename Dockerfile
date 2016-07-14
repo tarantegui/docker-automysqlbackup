@@ -12,3 +12,5 @@ RUN \
 
 RUN \
   sed -i 's/DBHOST=localhost/DBHOST=mysql/' /etc/default/automysqlbackup
+
+ENTRYPOINT [ "automysqlbackup" ]
